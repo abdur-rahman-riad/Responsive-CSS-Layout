@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album | CSS Layout</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        h1 {
+            color: crimson;
+            text-align: center;
+        }
+
+        .photo-album {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .photo-frame {
+            height: 200px;
+            width: 300px;
+            border: 2px solid gray;
+            text-align: justify;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo-details {
+            display: none;
+            height: 200px;
+            padding: 0 12px;
+            position: absolute;
+            top: 0;
+            line-height: 18px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            transition: transform 1s ease-in-out;
+        }
+
+        .photo-frame:hover .photo-details {
+            display: block;
+            color: white;
+            background-color: rgba(128, 128, 128, 0.486);
+        }
+
+        .photo-frame:hover .photo img {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to CSS Album</h1>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="img/fire.jpg" alt="">
+                </div>
+                <div class="photo-details">
+                    <h2>Fire on the Space</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere consequuntur cumque iste
+                        repellat itaque odio quam. Recusandae enim qui nihil voluptas laboriosam. Minima dolorem numquam
+                        placeat cum. Aut, iure.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="img/fire.jpg" alt="">
+                </div>
+                <div class="photo-details">
+                    <h2>Fire on the Space</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere consequuntur cumque iste
+                        repellat itaque odio quam. Recusandae enim qui nihil voluptas laboriosam. Minima dolorem numquam
+                        placeat cum. Aut, iure.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="img/fire.jpg" alt="">
+                </div>
+                <div class="photo-details">
+                    <h2>Fire on the Space</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere consequuntur cumque iste
+                        repellat itaque odio quam. Recusandae enim qui nihil voluptas laboriosam. Minima dolorem numquam
+                        placeat cum. Aut, iure.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
