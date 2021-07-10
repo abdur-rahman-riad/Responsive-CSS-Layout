@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox | CSS Layout</title>
+    <script src="https://kit.fontawesome.com/735f312c88.js" crossorigin="anonymous"></script>
+    <style>
+        h1 {
+            color: crimson;
+            text-align: center;
+        }
+
+        .login-section {
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form input,
+        button {
+            margin: 5px 0;
+            font-size: 1.2em;
+            padding: 5px 25px;
+            border: 1px solid teal;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            background-color: teal;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 35px;
+            align-items: center;
+            background-color: lightgreen;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            padding: 5px 12px;
+        }
+
+        nav img {
+            height: 80px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <img src="img/logo.png" alt="Logo">
+            </span>
+            <span>
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </span>
+            <span>
+                <a href="#"><i class="fas fa-user-circle"></i></a>
+                <a href="#"><i class="fas fa-power-off"></i></a>
+            </span>
+        </nav>
+    </header>
+    <h1>Welcome to Responsive CSS Layout | FlexBox</h1>
+
+    <section class="login-section">
+        <form action="" class="login-form">
+            <input type="text" name="name" placeholder="Your Name" id="">
+            <input type="password" name="password" placeholder="Your Password" id="">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+
+</html>
